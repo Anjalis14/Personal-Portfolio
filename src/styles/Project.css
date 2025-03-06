@@ -1,0 +1,57 @@
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columns */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .project-card {
+    background: black;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline here */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; /* Ensure the image is fully displayed */
+    border-radius: 8px;
+  }
+  
+  .project-title {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none; /* Ensure there's no underline on project title */
+  }
+  
+  .project-languages {
+    font-size: 1rem;
+    color: #66FCF1;
+    margin-top: 5px;
+  }
+  .project-card a {
+    text-decoration: none; /* Remove the underline from anchor tags */
+  }

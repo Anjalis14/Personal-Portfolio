@@ -1,0 +1,65 @@
+/* Ensure no horizontal scrolling */
+/* Replace 100vw with 100% for body width */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;        /* Changed from 100vw */
+    overflow-x: hidden;
+    background: #ffffff;
+  }
+  
+  .home-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: black; /* Space background */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .stars-container {
+    position: absolute;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: moveStars linear infinite;
+  }
+  
+  @keyframes moveStars {
+    0% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh);
+      opacity: 0;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .home-content h1 {
+    color: #66FCF1;
+   
+  }
+  .home-content p {
+    font-size: 20px;
+  }
